@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Car Interface</title>
+    <!-- external css linked-->
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <!-- heading of webpage -->
+    <div class="heading">
+        <h1>Toy Car Interface</h1>
+    </div>
+    <div class="container">
+        <!-- car image -->
+        <img id="carImage" src="IMG/car.jpg" alt="Toy Car Photo">
+        <!-- car details and create button to display it-->
+        <div class="car-properties">
+            <h3>Toy Car Details</h3>
+            <div id="carProperties"></div>
+            <button id="createToyCarButton">Create Toy Car</button>
+        </div>
+        <!-- update car image and its information form -->
+        <div class="car-information-fields">
+            <div>
+                <label for="carPhoto">Car Photo:</label>
+                <input type="file" id="toyCarPhoto" accept="image/*">
+            </div>
+            <div>
+                <label for="carBrand">Brand:</label>
+                <input type="text" id="toyCarBrand" placeholder="Enter brand name">
+            </div>
+            <div>
+                <label for="carModel">Model:</label>
+                <input type="text" id="toyCarModel" placeholder="Enter model name">
+            </div>
+            <div>
+                <label for="carPrice">Price:</label>
+                <input type="text" id="toyCarPrice" placeholder="Enter price">
+            </div>
+            <div>
+                <label for="carColor">Color:</label>
+                <input type="text" id="toyCarColor" placeholder="Enter color">
+            </div>
+            <div>
+                <label for="carMaterial">Material:</label>
+                <input type="text" id="toyCarMaterial" placeholder="Enter material">
+            </div>
+            <div>
+                <label for="carScale">Scale:</label>
+                <input type="text" id="toyCarScale" placeholder="Enter scale">
+            </div>
+            <div>
+                <label for="carFeatures">Features:</label>
+                <input type="text" id="toyCarFeatures" placeholder="Enter features [Separate it by comma]">
+            </div>
+            <button id="updateCarButton">Update Toy Car</button>
+        </div>
+    </div>
+    <!-- linked javascript file -->
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
